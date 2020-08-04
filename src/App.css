@@ -1,0 +1,123 @@
+.App {
+  text-align: center;
+  background-color:black;
+  background-size: cover;
+}
+
+.App-logo {
+  height: 30vmin;
+  pointer-events: none;
+}
+
+
+
+.App-header {
+  background-color: rgba(0, 1, 77, 0);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+ 
+}
+
+.App-footer {
+  color: white
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.homeButton {
+  color:white;
+  background-color:	#042f66;
+  width:200px;
+  height:70px;
+  padding-top: 40px;
+  border-radius: 63px;
+  text-decoration: none;
+  border-radius: 40px;
+  transition: all 0.2s ease-in-out;
+}
+
+.proButton {
+  color:white;
+  background-color: #195e83;
+  width:200px;
+  height:70px;
+  padding-top: 40px;
+  text-decoration: none;
+  border-radius: 40px;
+  color:#FFDAAA;
+  transition: all 0.2s ease-in-out;
+  
+  
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: right;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+.buttonContainer {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  text-align: center;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+
+}
+  
+
+.buttonContainer a:hover {
+  color: 	#d9271d;
+  transition: all 0.2s ease-in-out;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid red;
+  border-radius: 4px;
+}
+
+input[type=submit] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+ background-color:#195e83;
+  border-radius: 4px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
