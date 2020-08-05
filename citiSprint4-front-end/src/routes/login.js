@@ -6,7 +6,7 @@ import td from '../td.png'
 import scotia from '../scotia.png'
 
 
-export default function Start() {
+export default function Login() {
     return (
     <div> 
      <header className="App-header">
@@ -18,8 +18,8 @@ export default function Start() {
     
           <newFont style={{"font-size": "35px"}}>Email:</newFont><br /><input type='text'placeholder="example@example.com.."></input><br /> <br />
           <newFont style={{"font-size": "35px"}}>Sign-on partners:</newFont><br /><br /> 
-
-           <a href="http://localhost:3000/">
+</p>
+           <a href="http://localhost:3000/menu">
            <div class="row">
   <div class="column">
 <img border="0" alt="CIBC" src={cibc} width="100" height="100"/>
@@ -44,7 +44,7 @@ export default function Start() {
 <br></br>
 
 
-        </p>
+ 
         </header>
        
         </div>
