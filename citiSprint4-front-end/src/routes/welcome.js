@@ -13,7 +13,7 @@ export default function Welcome() {
           <newFont>Welcome to Citi-Balance!</newFont>
 <br></br>
 <br></br>
-      <newFont2>Use your money the right way.</newFont2> 
+      <newFont style={{fontSize: '30px'}}>Use your money the right way.</newFont> 
 
         </p>
         <div className="buttonContainer">

@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color:black;
+  background-color:#e6efff;
   background-size: cover;
 }
 
@@ -8,6 +8,8 @@
   height: 30vmin;
   pointer-events: none;
 }
+
+
 
 
 
@@ -50,7 +52,7 @@
   padding-top: 40px;
   text-decoration: none;
   border-radius: 40px;
-  color:#FFDAAA;
+  color:white;
   transition: all 0.2s ease-in-out;
   
   
@@ -85,8 +87,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   text-align: center;
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-  monospace;
+  font-family: 'Arial'
 
 }
   
@@ -121,3 +122,4 @@ input[type=submit] {
     transform: rotate(360deg);
   }
 }
+
