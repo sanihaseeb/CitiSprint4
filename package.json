@@ -15,6 +15,9 @@
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
     "mongodb": "^3.3.4",
-    "mongoose": "^5.7.10"
+    "mongoose": "^5.7.10",
+    "react-multi-select-component": "^3.0.1",
+    "semantic-ui-react": "^1.1.1",
+    "usestate": "^1.1.3"
   }
 }

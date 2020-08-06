@@ -5,6 +5,7 @@ import rbc from '../rbc.png'
 import td from '../td.png'
 import scotia from '../scotia.png'
 import bmo from '../bmo.jpg'
+import Card from "react-bootstrap/Card";
 
 
 export default function Login() {
@@ -12,34 +13,69 @@ export default function Login() {
     <div> 
      <header className="App-header">
     <img src={logo} className="App-logo" alt="logo" />
-        <p>
+ 
          
-          <br></br>    
+          <br></br>
+       
+          <br></br>   
        
           <newFont style={{"font-size": "35px"}}>Select Sign-in Partner:</newFont><br /><br /> 
-</p>
-           <a href="http://localhost:3000/menu">
-           <div class="row">
+
+<div class="row">
   <div class="column">
-<img border="0" alt="CIBC" src={cibc} width="100" height="100"/>
+
+<div className="card">
+<a href="http://localhost:3000/menu">
+  <img src={rbc} style={{"width": "100px", "height":"100px"}} className="card-img-top" alt="..." /> 
+  <div className="card-body">
+    <h5 className="card-title">RBC</h5>
+
+  </div>
+ </a>
 </div>
-<div class="column">
-<img border="0" alt="BMO" src={bmo} width="100" height="100"/>
+
+
+
+
+<div className="card" >
+<a href="http://localhost:3000/menu">
+<img src={cibc} style={{"width": "100px", "height":"100px"}} className="card-img-top" alt="..." /> 
+  <div className="card-body">
+    <h5 className="card-title">CIBC</h5>
+  </div>
+  </a>
 </div>
-<div class="column">
-<img border="0" alt="RBC" src={rbc} width="100" height="100" />
 </div>
+
 <div class="column">
-<img border="0" alt="SCOTIA" src={scotia} width="100" height="100" />
+<div className="card">
+<a href="http://localhost:3000/menu">
+  <img src={bmo} style={{"width": "100px", "height":"100px"}} className="card-img-top" alt="..." /> 
+  <div className="card-body">
+    <h5 className="card-title">BMO</h5>
+   
+  </div>
+  </a>
 </div>
-<div class="column">
-<img border="0" alt="TD" src={td} width="100" height="100" />
+
+
+
+<div className="card" >
+<a href="http://localhost:3000/menu">
+<img src={scotia} style={{"width": "100px", "height":"100px"}} className="card-img-top" alt="..." /> 
+  <div className="card-body">
+    <h5 className="card-title">Scotiabank</h5>
+  </div>
+  </a>
 </div>
 
 </div>
 
-</a>
-        </header>
-       
-        </div>
+
+
+</div>
+
+     
+</header>    
+  </div>
 )}

@@ -4,7 +4,6 @@ export default function Welcome() {
   
   return (
 
-    
     <div className="App">
       <header className="App-header">
      
@@ -13,7 +12,7 @@ export default function Welcome() {
           <newFont>Welcome to Citi-Balance!</newFont>
 <br></br>
 <br></br>
-      <newFont style={{fontSize: '30px'}}>Use your money the right way.</newFont> 
+      <newFont2 >Use your money the right way.</newFont2> 
 
         </p>
         <div className="buttonContainer">
