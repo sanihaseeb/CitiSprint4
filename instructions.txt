@@ -10,3 +10,6 @@ $ mongod --dbpath ./mongo-data
 
 ## Start web server
 $ node server.js
+
+## Start unit test
+$ npm run test
