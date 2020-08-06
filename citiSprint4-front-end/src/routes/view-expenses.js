@@ -4,58 +4,91 @@ import 'react-dropdown/style.css';
 import { AgGridReact } from 'ag-grid-react';
 import 'ag-grid-community/dist/styles/ag-grid.css';
 import 'ag-grid-community/dist/styles/ag-theme-alpine.css';
-
+import happyFace from '../happyFace.png'
+import sadFace from './cryFace.png'
+import {Table} from 'react-bootstrap';
 export default function View() {
     return (
     <div> 
+       <div className="buttonContainer" style={{width:'150px',paddingTop:'3px', marginLeft:'1250px'}}>
+                <a href = 'http://localhost:3000/login' className="proButton" >  Log out! </a>
+                </div>
      <header className="App-header">
     <img src={logo} className="App-logo" alt="logo" />
         <p>
-      
-          <newFont>Summary for July</newFont>
-          <br></br>     <br></br>    <br></br> 
+        <br></br>     
+          <newFont>Transactions for July</newFont>
+          <br></br>     
+     
 </p>
 
-<div
-        className="ag-theme-alpine"
-        style={{
-        height: '450px',
-        width: '600px', 
-        }}
-      >
-        <AgGridReact
-          columnDefs={[{
-            headerName: "Point", field: "point"
-          }, {
-            headerName: "Price", field: "price"
-          }, {
-            headerName: "Opinion", field: "feel"
-          }]}
-          rowData={[{
-            point: "Walmart", price: "$71.20", feel: `Well Spent`
-          }, {
-            point: "Amazon", price: "$33.75", feel: 'Could have avoided'
-          }, {
-            point: "Best Buy", price: "$44.32", feel: 'Well Spent'
-          },{
-          point: "Tim Horton's", price: "$12.30", feel: 'Well Spent'
-          },
-            {
-            point: "ABC Steak House", price: "$49.39", feel: 'Well Spent'
-          },
-            {
-              point: "Amazon", price: "$112.40", feel: 'Could have avoided'
-          },
-              {
-                point: "Cinema XY", price: "$34.29", feel: 'Could have avoided'
-          }]}>
-        </AgGridReact>
+
+       <Table striped bordered hover style={{backgroundColor:'#e6efff'}}>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Point </th>
+      <th>CAD</th>
+      <th >Opinion </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Walmart</td>
+      <td>$71.20</td>
+      <td><img src={happyFace} height='50px' width='50px'></img></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Amazon</td>
+      <td>$33.75</td>
+      <td><img src={sadFace} height='50px' width='50px'></img></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td >Best Buy</td>
+      <td>$44.32</td>
+      <td><img src={happyFace} height='50px' width='50px'></img></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td >Tim Horton's</td>
+      <td>$12.30</td>
+      <td><img src={happyFace} height='50px' width='50px'></img></td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td >Steakhouse</td>
+      <td>$49.39</td>
+      <td><img src={happyFace} height='50px' width='50px'></img></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td >Amazon</td>
+      <td>$112.40</td>
+      <td><img src={sadFace} height='50px' width='50px'></img></td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td >Cinema XY</td>
+      <td>$34.29</td>
+      <td><img src={sadFace} height='50px' width='50px'></img></td>
+    </tr>
+  
+  
+  </tbody>
+</Table>
         <br />
-        <div className="buttonContainer" >
-        <a href = 'http://localhost:3000/add-expense' className="homeButton"style={{width:'350px'}} >  Add Expenses </a>
-        </div>
-        </div>
+   
+      
     
+        <div className="buttonContainer">
+        <a href = 'http://localhost:3000/add-expense' className="homeButton" style={{width:'350px'}}>  Add New Expense </a>
+        &nbsp; &nbsp; &nbsp;
+        <a href = 'http://localhost:3000/summary' className="proButton"style={{width:'350px'}} >  View Summary </a>
+        </div>
+
       
   
         <br /> <br />

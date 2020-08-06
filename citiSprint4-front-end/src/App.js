@@ -13,6 +13,7 @@ import Menu from './routes/menu'
 import View from './routes/view-expenses'
 import AddExpense from './routes/add-expense'
 import ViewExp from './routes/viewExpenses'
+import Summary from './routes/summary'
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
     <Route path="/view-expenses" component={View}/>
     <Route path="/add-expense" component={AddExpense}/>
     <Route path="/viewExpenses" component={ViewExp}/>
+    <Route path="/summary" component={Summary}/>
       <Route path="/" component={Welcome} />
       </Switch>
       </div>
