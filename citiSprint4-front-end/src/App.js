@@ -14,6 +14,7 @@ import View from './routes/view-expenses'
 import AddExpense from './routes/add-expense'
 import ViewExp from './routes/viewExpenses'
 import Summary from './routes/summary'
+import LoginCB from './routes/loginCB'
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
   <div className="App">
     <Switch>
     <Route path="/login" component={Login} />
+    <Route path="/loginCB" component={LoginCB}/>
     <Route path="/menu" component={Menu} />
     <Route path="/view-expenses" component={View}/>
     <Route path="/add-expense" component={AddExpense}/>

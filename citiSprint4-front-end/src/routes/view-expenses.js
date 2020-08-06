@@ -11,7 +11,7 @@ export default function View() {
     return (
     <div> 
        <div className="buttonContainer" style={{width:'150px',paddingTop:'3px', marginLeft:'1250px'}}>
-                <a href = 'http://localhost:3000/login' className="proButton" >  Log out! </a>
+                <a href = 'http://localhost:3000/loginCB' className="proButton" >  Log out! </a>
                 </div>
      <header className="App-header">
     <img src={logo} className="App-logo" alt="logo" />
