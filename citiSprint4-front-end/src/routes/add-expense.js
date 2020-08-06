@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 import logo from '../citi.png'
 import 'react-dropdown/style.css';
 import Dropdown from 'react-dropdown';
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 
 
@@ -24,7 +26,9 @@ export default function AddExp() {
  <br />
     <newFont style={{"font-size": "25px"}}>Point of Transaction:</newFont><br /><input type='text'></input><br /> <br />
     <newFont style={{"font-size": "25px"}}>Amount Spent:</newFont><br /><input type='text'></input><br /> <br />
+    <newFont style={{"font-size": "25px"}}>Date of Transaction:</newFont><br /><input type='date' style={{height:'50px', width: '400px'}}></input><br /> <br />
     <newFont style={{"font-size": "25px"}}>Necessity of Spending:</newFont><br /> 
+  
     <Dropdown options={options}></Dropdown>
     <br /> <br />
     <div className="buttonContainer">

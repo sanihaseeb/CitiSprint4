@@ -14,7 +14,7 @@ export default function Summary() {
      <header className="App-header">
     <img src={logo} className="App-logo" alt="logo" />
         <p>
-          <newFont>How good were you last month?</newFont>
+          <newFont>Expense Summary</newFont>
           <br></br>     <br></br>    <br></br> 
 
           
