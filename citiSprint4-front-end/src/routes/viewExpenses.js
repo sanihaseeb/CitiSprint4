@@ -5,7 +5,7 @@ import { AgGridReact } from 'ag-grid-react';
 import 'ag-grid-community/dist/styles/ag-grid.css';
 import 'ag-grid-community/dist/styles/ag-theme-alpine.css';
 
-export default function View() {
+export default function ViewExp() {
     return (
     <div> 
      <header className="App-header">
@@ -46,8 +46,9 @@ export default function View() {
             {
               point: "Amazon", price: "$112.40", feel: 'Could have avoided'
           },
+              ,
               {
-                point: "Cinema XY", price: "$34.29", feel: 'Could have avoided'
+                point: "Starbucks", price: "$12.00", feel: 'Could have avoided'
           }]}>
         </AgGridReact>
         <br />
