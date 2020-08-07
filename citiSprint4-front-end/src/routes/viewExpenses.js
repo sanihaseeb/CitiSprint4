@@ -10,8 +10,9 @@ import {Table} from 'react-bootstrap';
 export default function ViewExp() {
     return (
     <div> 
-       <div className="buttonContainer" style={{width:'150px',paddingTop:'3px', marginLeft:'1250px'}}>
+       <div className="buttonContainer" style={{width:'150px',paddingTop:'3px', marginLeft:'1760px'}}>
                 <a href = 'http://localhost:3000/loginCB' className="proButton" >  Log out! </a>
+               
                 </div>
      <header className="App-header">
     <img src={logo} className="App-logo" alt="logo" />
@@ -92,6 +93,8 @@ export default function ViewExp() {
         <a href = 'http://localhost:3000/add-expense' className="homeButton" style={{width:'350px'}}>  Add Expenses </a>
         &nbsp; &nbsp; &nbsp;
         <a href = 'http://localhost:3000/summary' className="proButton" style={{width:'350px'}}>  View Summary </a>
+        &nbsp; &nbsp; &nbsp;
+        <a href = 'http://localhost:3000/menu' className="proButton" style={{width:'350px'}}> Back </a>
         </div>
 
       

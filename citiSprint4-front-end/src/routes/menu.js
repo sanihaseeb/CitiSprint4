@@ -6,7 +6,7 @@ import 'react-dropdown/style.css';
 export default function Menu() {
     return (
     <div> 
-     <div className="buttonContainer" style={{width:'150px',paddingTop:'3px', marginLeft:'1250px'}}>
+     <div className="buttonContainer" style={{width:'150px',paddingTop:'3px', marginLeft:'1760px'}}>
                 <a href = 'http://localhost:3000/loginCB' className="proButton" >  Log out! </a>
                 </div>
      <header className="App-header">

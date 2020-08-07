@@ -10,7 +10,7 @@ import {Table} from 'react-bootstrap';
 export default function View() {
     return (
     <div> 
-       <div className="buttonContainer" style={{width:'150px',paddingTop:'3px', marginLeft:'1250px'}}>
+       <div className="buttonContainer" style={{width:'150px',paddingTop:'3px', marginLeft:'1760px'}}>
                 <a href = 'http://localhost:3000/loginCB' className="proButton" >  Log out! </a>
                 </div>
      <header className="App-header">
@@ -87,6 +87,8 @@ export default function View() {
         <a href = 'http://localhost:3000/add-expense' className="homeButton" style={{width:'350px'}}>  Add New Expense </a>
         &nbsp; &nbsp; &nbsp;
         <a href = 'http://localhost:3000/summary' className="proButton"style={{width:'350px'}} >  View Summary </a>
+        &nbsp; &nbsp; &nbsp;
+        <a href = 'http://localhost:3000/menu' className="proButton" style={{width:'350px'}}> Back </a>
         </div>
 
       
