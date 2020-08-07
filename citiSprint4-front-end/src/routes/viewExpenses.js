@@ -26,7 +26,7 @@ export default function ViewExp() {
        <Table striped bordered hover style={{backgroundColor:'#e6efff'}}>
   <thead>
     <tr>
-      <th>#</th>
+      <th>Date</th>
       <th>Point </th>
       <th>CAD</th>
       <th >Opinion </th>
@@ -34,49 +34,49 @@ export default function ViewExp() {
   </thead>
   <tbody>
     <tr>
-      <td>1</td>
+      <td>2020/07/01</td>
       <td>Walmart</td>
       <td>$71.20</td>
       <td><img src={happyFace} height='50px' width='50px'></img></td>
     </tr>
     <tr>
-      <td>2</td>
+      <td>2020/07/02</td>
       <td>Amazon</td>
       <td>$33.75</td>
       <td><img src={sadFace} height='50px' width='50px'></img></td>
     </tr>
     <tr>
-      <td>3</td>
+      <td>2020/07/03</td>
       <td >Best Buy</td>
       <td>$44.32</td>
       <td><img src={happyFace} height='50px' width='50px'></img></td>
     </tr>
     <tr>
-      <td>4</td>
+      <td>2020/07/04</td>
       <td >Tim Horton's</td>
       <td>$12.30</td>
       <td><img src={happyFace} height='50px' width='50px'></img></td>
     </tr>
     <tr>
-      <td>5</td>
+      <td>2020/07/05</td>
       <td >Steakhouse</td>
       <td>$49.39</td>
       <td><img src={happyFace} height='50px' width='50px'></img></td>
     </tr>
     <tr>
-      <td>6</td>
+      <td>2020/07/06</td>
       <td >Amazon</td>
       <td>$112.40</td>
       <td><img src={sadFace} height='50px' width='50px'></img></td>
     </tr>
     <tr>
-      <td>7</td>
+      <td>2020/07/07</td>
       <td >Cinema XY</td>
       <td>$34.29</td>
       <td><img src={sadFace} height='50px' width='50px'></img></td>
     </tr>
     <tr>
-      <td>8</td>
+      <td>2020/07/08</td>
       <td >Starbucks</td>
       <td>$12.00</td>
       <td><img src={sadFace} height='50px' width='50px'></img></td>
