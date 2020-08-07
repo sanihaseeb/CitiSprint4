@@ -1,14 +1,11 @@
-/* Restaurant and Reservation Models */
-// DO NOT CHANGE THIS FILE
-
+/* User Models */
 const mongoose = require('mongoose');
 const bcrypt = require("bcryptjs");
 
 const UserSchema = new mongoose.Schema({
-    name: {
+    email: {
       type: String,
       required: true,
-      minlength: 8,
       trim: true,
       unique: true
     },
