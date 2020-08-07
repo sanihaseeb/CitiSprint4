@@ -1,8 +1,12 @@
+/* Expense Models */
 const mongoose = require('mongoose');
 
-
-
 const expenseSchema = new mongoose.Schema({
+    date:{
+        type: Date,
+        required: true,
+    }
+    ,
     point: {
         type: String,
         required: true,

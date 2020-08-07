@@ -29,19 +29,19 @@ app.post('/addUser', (req, res) => {
 
 
 // route to get all users from database
-app.get("/getUsers", (req, res) => {
+app.get("/Users", (req, res) => {
 	User.find()
 	  .then(users => {
 		res.send(users);
 	  })
 	  .catch(error => {
-		res.status(500).send(error);
+		res.status(500).send(error); // send 500 if server error
 	  });
   });
   
 
 // route to get a specific user by email
-app.get("/getUser/:email", (req, res) => {
+app.get("/User/:email", (req, res) => {
 	const userEmail = req.params.email;
 	User.findOne({ email: userEmail })
 	  .then(user => {
@@ -65,6 +65,7 @@ app.post('/addExpense', (req, res) => {
 			res.status(404).send(); // send 404 if user not found
 		} else{
 			const expense = new Expense({
+				date: req.body.date,
 				point: req.body.point,
 				CAD: req.body.CAD,
 				feeling: req.body.feeling,
@@ -78,7 +79,6 @@ app.post('/addExpense', (req, res) => {
 		}
 	}).catch(error => res.status(500).send); // send 500 for server error
 })
-
 
 ////////// DO NOT CHANGE THE CODE OR PORT NUMBER BELOW
 const port = process.env.PORT || 5000
