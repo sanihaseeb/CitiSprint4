@@ -1,6 +1,4 @@
-/* Restaurant and Reservation Models */
-// DO NOT CHANGE THIS FILE
-
+/* User Models */
 const mongoose = require('mongoose');
 const bcrypt = require("bcryptjs");
 
